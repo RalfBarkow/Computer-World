@@ -8,9 +8,10 @@ Class {
 	#category : #'ComputerWorld-Apps'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 CwCalibre >> downloadUrl [
-	^ 'https://github.com/kovidgoyal/calibre/releases/download/v2.45.0/calibre-2.45.0.dmg' asUrl
+	^ 'https://github.com/kovidgoyal/calibre/releases/download/v6.29.0/calibre-6.29.0.dmg'
+		asUrl
 ]
 
 { #category : #'as yet unclassified' }
