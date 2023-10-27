@@ -226,6 +226,14 @@ CwMacApplication >> delay: aDuration [
 	self tellApplicationTo: 'delay ', aDuration seconds asString.
 ]
 
+{ #category : #accessing }
+CwMacApplication >> emacs [
+	| bundleFile |
+	bundleFile := '/nix/store/slgpr7cl4837kginsxx8cym4dbsv86c7-emacs-unstable-29.1.90/Applications/Emacs.app'
+			asFileReference.
+	^ CwMacApplication fromBundle: bundleFile
+]
+
 { #category : #testing }
 CwMacApplication >> isQuarantined [
 	"For some of the implications of quarantine, see https://www.synack.com/blog/untranslocating-apps/"
